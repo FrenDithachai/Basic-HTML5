@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        form{
+            border: 2px solid blue;
+        }
+        input{
+            border: 2px solid green;
+        }
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+้   
+<body>
+    <h1 align="center">หน้า From</h1>
+    <form >
+        <div>
+            <label for="fitstname">ชื่อจริง</label>
+            <input type="text" name="Fname" placeholder="ป้อนชื่อจริง" required>
+        </div>
+        <div>
+            <label for="Lastname">นามสกุล</label>    
+            <input type="text" name="Lname" placeholder="ป้อนนามสกุล">    <!--type เปลี่ยนตามสถานะ-->
+        </div>
+        <div>
+            <label for="Email">อีเมล์</label>
+            <input type="email" name="email" placeholder="ป้อนอีเมล์" required> <!--required คำสั่งในการเช็คการป้อนข้อมูล-->
+        </div>
+        <div>
+            <label for="Password">ป้อนรหัส</label>
+            <input type="password" name="password" placeholder="**********" required>
+        </div>
+        <div>
+            <label for="Adress">ที่อยู่</label>
+            <textarea name="" id="" cols="30" rows="5" readonly>
+                เฟนนนนแบมมมมมม
+            </textarea>
+            
+        </div>
+        <div>
+            <label for="Old">อายุ</label>
+            <input type="number" name="old" placeholder="ป้อนอายุ" min="0" readonly> <!--readonly การปิดค่าไม่สามารแก้ไขได้-->
+        </div>
+        <div>
+            <label for="Brithday">วันเกิด</label>
+            <input type="date" name="brithday" >
+        </div>
+        <div>
+            <label for="Tell">เบอร์โทร</label>
+            <input type="tel" name="tel" placeholder="ป้อนเบอร์โทร">
+        </div>
+        <div>
+            <label for="Color">สี</label>
+            <input type="color" name="color">
+        </div>
+        <div>
+            <label for="Number">ช่วงตัวเลข</label>
+            <input type="range" name="rangenumber" value="1">
+        </div>
+        <div>
+            <label for="Edu">ระดับการศึกษา</label>
+            <select name="edu" id="">      <!--ใช้ร่วมกับ option-->
+                <option value="ปริญญาตรี">ปริญญาตรี</option>
+                <option value="ปริญญาโท" selected>ปริญญาโท</option>
+                <option value="ปริญญาเอก">ปริญญาเอก</option>      <!--คือตัวเลือก ถ้าข้อมูลเยอะใช้ตัวนี้-->
+            </select>
+        </div>
+        <div>
+            <label for="Sex">เพศ</label>        <!--เลือกได้1ตัวเลือกในกลุ่มเดียวกัน-->
+            <input type="radio" name="gender">เพศชาย
+            <input type="radio" name="gender">เพศหญิง
+            <input type="radio" name="gender">ไม่ระบุ
+        </div>
+        <div>
+            <label for="faverat">สิ่งที่ชอบ</label>         <!--เลือกได้หลายตัว-->
+            <input type="checkbox" name="fav">ดูยูทูป
+            <input type="checkbox" name="fav">เขียนเว็ป
+            <input type="checkbox" name="fav">เล่นเกม
+            <input type="checkbox" name="fav">ดูหนัง
+            <input type="checkbox" name="fav">อื่นๆ
+        </div>
+        <div>
+            <label for="File">แนบไฟล์</label>
+            <input type="file">
+        </div>
+        <div>
+            <label for="File">เว็ปไซต์</label>
+            <input type="url">
+        </div>
+        <div>
+            <input type="submit" value="บันทึก">          <!--สร้างปุ่มโดยใช้ submit-->
+            <button type="submit">บันทีกข้อมูล</button>     <!--ใช้แบบนี้ก็ได้-->
+            <input type="reset" value="ล้างข้อมูล">           <!--ล้างค่าโดยใช้ reset--> 
+            <button type="reset">ล้างข้อมูล</button>          <!--ใช้แบบนี้ก็ได้--> 
+        </div>
+    </form>
+
+    <a href="index.html">กลับหน้าหลัก</a>
+</body>
+</html>
